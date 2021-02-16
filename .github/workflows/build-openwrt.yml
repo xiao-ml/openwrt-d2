@@ -66,7 +66,7 @@ jobs:
       working-directory: /workdir
       run: |
         df -hT $PWD
-        wget $REPO_URL -O openwrt.zip
+        wget $REPO_URL -O openwrt.tar.xy
         mkdir ./openwrt && tar -xvJf openwrt.tar.xy -C ./openwrt --strip-components 1
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
